@@ -16,7 +16,7 @@ pipeline {
         SECUREOPS_URL = 'http://host.docker.internal:8081'
 
         // Register this project manually in SecureOps before running Jenkins
-        PROJECT_NAME = 'SecureOps-Vulnerable-Demo'
+        PROJECT_NAME = 'Jenkins-Integration-Vulnerable-Test'
         REPOSITORY_URL = 'https://github.com/AyaanB24/Jenkins-Integration-Test-For-SecureOpsAI-Vulnerable'
 
         IMAGE_NAME = 'secureops-demo'
