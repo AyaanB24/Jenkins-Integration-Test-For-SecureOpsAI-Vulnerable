@@ -70,6 +70,8 @@ pipeline {
                         -v "${WORKSPACE}:/scan" \
                         -v "${TRIVY_CACHE}:/root/.cache/trivy" \
                         aquasec/trivy:latest \
+                        --cache-dir /root/.cache/trivy \
+                        --db-repository ghcr.io/aquasecurity/trivy-db:2 \
                         image \
                         --timeout 30m \
                         --input /scan/secureops-demo.tar \
@@ -414,4 +416,3 @@ pipeline {
         }
     }
 }
-
